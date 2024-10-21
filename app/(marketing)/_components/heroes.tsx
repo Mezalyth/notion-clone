@@ -8,7 +8,13 @@ export const Heroes = () => {
                     <Image 
                         src="/quill.svg"
                         fill
-                        className="object-contain"
+                        className="object-contain dark:hidden"
+                        alt="Quill"
+                    />
+                    <Image
+                        src="/quill-dark.svg"
+                        fill
+                        className="object-contain hidden dark:block"
                         alt="Quill"
                     />
                 </div>
@@ -16,7 +22,13 @@ export const Heroes = () => {
                     <Image
                         src="/cauldron.svg"
                         fill
-                        className="object-contain"
+                        className="object-contain dark:hidden"
+                        alt="Cauldron"
+                    />
+                    <Image
+                        src="/cauldron-dark.svg"
+                        fill
+                        className="object-contain hidden dark:block"
                         alt="Cauldron"
                     />
                 </div>
