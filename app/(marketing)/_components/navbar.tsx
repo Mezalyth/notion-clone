@@ -2,7 +2,7 @@
 
 import { useConvexAuth } from "convex/react";
 import { SignInButton, UserButton } from "@clerk/clerk-react";
-import { Link } from "next/link";
+import Link from "next/link";
 
 import { useScrollTop } from "@/hooks/use-scroll-top";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -47,9 +47,7 @@ export const Navbar = () => {
                                 Enter Potion
                             </Link>
                         </Button>
-                        <UserButton
-                            afterSignOutUrl="/"
-                        />
+                        <UserButton signOutRedirectUrl="/" />
                     </>
                 )}
                 <ModeToggle />
